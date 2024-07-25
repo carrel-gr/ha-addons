@@ -10,6 +10,6 @@ export DEBUG="$(bashio::config 'debug')"
 export IGNORE_ENELX="$(bashio::config 'ignore_enelx')"
 export UPDATE_UDPC="$(bashio::config 'update_udpc')"
 
-print DAVE: UPDATE_UDPC=$UPDATE_UDPC
-print DAVE: $BASH_VERSION
+printf "DAVE: UPDATE_UDPC=$UPDATE_UDPC \n"
+printf 'DAVE: $BASH_VERSION \n"
 /juicepassproxy/docker_entrypoint.sh
