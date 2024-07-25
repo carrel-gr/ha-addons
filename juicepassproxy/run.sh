@@ -8,6 +8,7 @@ export JUICEBOX_HOST="$(bashio::config 'juicebox_host')"
 export DEVICE_NAME="$(bashio::config 'juicebox_device_name')"
 export DEBUG="$(bashio::config 'debug')"
 export IGNORE_ENELX="$(bashio::config 'ignore_enelx')"
-export UPDATE_UDPC="$(bashio::config 'update_udpc')"
+export UPDATE_UDPC="true"
+#export UPDATE_UDPC="$(bashio::config 'update_udpc')"
 
 /juicepassproxy/docker_entrypoint.sh
