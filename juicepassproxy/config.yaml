@@ -25,4 +25,4 @@ schema:
   juicebox_device_name: str
   debug: bool
   ignore_enelx: bool
-  updaste_udpc: bool
+  update_udpc: bool
