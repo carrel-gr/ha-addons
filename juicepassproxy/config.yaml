@@ -17,12 +17,12 @@ services:
 options:
   juicebox_host: null
   juicebox_device_name: JuiceBox
+  update_udpc: false
   debug: false
   ignore_enelx: false
-  update_udpc: false
 schema:
   juicebox_host: str
   juicebox_device_name: str
+  update_udpc: bool
   debug: bool
   ignore_enelx: bool
-  update_udpc: bool
