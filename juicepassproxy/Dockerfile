@@ -17,4 +17,8 @@ RUN curl -J -L -o /tmp/jpp.tar.gz \
   mkdir -p /log
 
 COPY run.sh /run.sh
-ENTRYPOINT /run.sh
+RUN chmod a+x /run.sh
+
+#ENTRYPOINT /run.sh
+
+CMD [ "/run.sh" ]
