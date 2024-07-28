@@ -16,9 +16,8 @@ RUN curl -J -L -o /tmp/jpp.tar.gz \
   chmod -f +x /juicepassproxy/*.sh && \
   mkdir -p /log
 
-COPY run.sh /run.sh
+COPY run.sh /
 RUN chmod a+x /run.sh
 
-#ENTRYPOINT /run.sh
+ENTRYPOINT /run.sh
 
-CMD [ "/run.sh" ]
