@@ -18,11 +18,13 @@ options:
   juicebox_host: null
   juicebox_device_name: JuiceBox
   update_udpc: false
+  dave1: false
   debug: false
   ignore_enelx: false
 schema:
   juicebox_host: str
   juicebox_device_name: str
   update_udpc: bool
+  dave1: bool
   debug: bool
   ignore_enelx: bool
