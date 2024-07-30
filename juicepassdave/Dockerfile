@@ -19,4 +19,4 @@ RUN curl -J -L -o /tmp/jpp.tar.gz \
 COPY dave.sh /
 RUN chmod a+x /dave.sh
 
-ENTRYPOINT /dave.sh
+CMD [ "/dave.sh" ]
