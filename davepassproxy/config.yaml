@@ -1,0 +1,30 @@
+name: "DavePassProxy"
+description: "This tool will publish JuiceBox data by using a Man in the Middle UDP proxy to MQTT that is auto-discoverable by HomeAssistant."
+version: "0.1.3"
+image: ghcr.io/wozz/ha-addons/juicepassproxy-{arch}
+slug: "davepassproxy"
+ports:
+  "8047/udp": 8047
+  "8042/udp": 8042
+panel_icon: mdi:ev-station
+arch:
+  - aarch64
+  - amd64
+discovery:
+  - mqtt
+services:
+  - "mqtt:need"
+options:
+  juicebox_host: null
+  juicebox_device_name: JuiceBox
+  update_udpc: false
+  dave1: false
+  debug: false
+  ignore_enelx: false
+schema:
+  juicebox_host: str
+  juicebox_device_name: str
+  update_udpc: bool
+  dave1: bool
+  debug: bool
+  ignore_enelx: bool
